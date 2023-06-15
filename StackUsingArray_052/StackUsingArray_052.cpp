@@ -23,8 +23,19 @@ public:
 		stack_array[top] = element;
 
 		cout << endl;
-		cout << element << "ditambahkan(pushed). " << endl;
+		cout << element << "ditambahkan(pushed)." << endl;
 
 		return element;
 	}
+
+	void pop() {
+		if (empty()) {
+			cout << "/nstack is empty. Cannot pop." << endl;
+			return;
+		}
+
+		cout << "\nThe popped element is: " << stack_array[top] << endl;
+		top--;
+	}
+
 };
